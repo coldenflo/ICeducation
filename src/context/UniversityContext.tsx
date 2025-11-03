@@ -39,7 +39,7 @@ export const UniversityProvider: React.FC<UniversityProviderProps> = ({ children
       setUniversities(data);
       setError(null);
     } catch (err) {
-      setError('Не удалось загрузить университеты, попробуйте еще раз');
+      setError('Unable to load universities. Please try again.');
       console.error(err);
     } finally {
       setLoading(false);
@@ -56,7 +56,7 @@ export const UniversityProvider: React.FC<UniversityProviderProps> = ({ children
       addUniversity(university);
       refreshUniversities();
     } catch (err) {
-      setError('Не удалось добавить уиниверситет, попробуйте еще раз');
+      setError('Unable to add university. Please try again.');
       console.error(err);
     }
   };
@@ -66,7 +66,7 @@ export const UniversityProvider: React.FC<UniversityProviderProps> = ({ children
       updateUniversity(university);
       refreshUniversities();
     } catch (err) {
-      setError('Не удалось обновить данные, попробуйте еще раз');
+      setError('Unable to update the university. Please try again.');
       console.error(err);
     }
   };
@@ -76,7 +76,7 @@ export const UniversityProvider: React.FC<UniversityProviderProps> = ({ children
       deleteUniversity(id);
       refreshUniversities();
     } catch (err) {
-      setError('Не удалось удалить, попробуйте еще раз');
+      setError('Unable to delete the university. Please try again.');
       console.error(err);
     }
   };

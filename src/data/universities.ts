@@ -1,534 +1,474 @@
 // src/data/universities.ts
-import { University } from '../types'; 
+import { University } from '../types';
 
 export const universities: University[] = [
   {
-    id: "1",
-    name: "Shanghai Business School (上海商学院)", 
-    location: "г. Шанхай, Китай", 
+    id: '1',
+    name: 'Shanghai Business School (上海商学院)',
+    location: 'Shanghai, China',
     countryRanking: 132,
     worldRanking: 1254,
-    slug: "Shanghai-Business-School",
-    logo: "https://i.postimg.cc/HxXdd2ys/161078-shanghaishangxueyuanxiaohuilogo-36382189-3.avif",
-    description: "Shanghai Business School (SBS), основанная в 1950 году, является государственным высшим учебным заведением, специализирующимся на бизнес-образовании. Расположенная в динамичном мегаполисе Шанхай, школа предлагает широкий спектр программ бакалавриата и магистратуры, ориентированных на практику и международное сотрудничество. SBS гордится своими тесными связями с бизнес-сообществом и предоставляет студентам отличные возможности для карьерного роста.",
+    slug: 'Shanghai-Business-School',
+    logo: 'https://i.postimg.cc/HxXdd2ys/161078-shanghaishangxueyuanxiaohuilogo-36382189-3.avif',
+    description:
+      'Shanghai Business School (SBS), founded in 1950, is a public institution specialising in business education. Located in the financial hub of Shanghai, SBS delivers practice-oriented bachelor and master programmes with strong links to industry partners and international exchange opportunities.',
     programs: [
-      { name: "Управление бизнесом (Business Management)", language: "Английский" },
-      { name: "Гостиничный менеджмент (Hotel Management)", language: "Английский" },
-      { name: "Финансы (Finance)", language: "Английский" }
+      { name: 'Business Management', language: 'English' },
+      { name: 'Hotel Management', language: 'English' },
+      { name: 'Finance', language: 'English' },
     ],
     scholarships: [
       {
-        type: "Стипендия Типа А",
-        benefits: [
-          "Бесплатное обучение",
-          "Бесплатная страховка",
-          "Ежемесячная стипендия: 1200 юаней"
-        ]
+        type: 'Type A Scholarship',
+        benefits: ['Full tuition waiver', 'Medical insurance', 'Monthly stipend: CNY 1,200'],
       },
       {
-        type: "Стипендия Типа B",  
-        benefits: [
-          "Бесплатное обучение",
-          "Бесплатная страховка",
-          "Ежемесячная стипендия: 600 юаней"
-        ]
+        type: 'Type B Scholarship',
+        benefits: ['Full tuition waiver', 'Medical insurance', 'Monthly stipend: CNY 600'],
       },
       {
-        type: "Стипендия Типа C",  
-        benefits: [
-          "Бесплатное обучение",
-          "Бесплатная страховка"
-        ]
-      }
+        type: 'Type C Scholarship',
+        benefits: ['Full tuition waiver', 'Medical insurance'],
+      },
     ],
     additionalCosts: [
-      { name: "Проживание", amount: "750 юаней/месяц" },
-      { name: "Медицинский осмотр", amount: "400–500 юаней" },   
-      { name: "Продление визы (ВНЖ)", amount: "400 юаней" },   
-      { name: "Регистрационный взнос", amount: "800 юаней" }
+      { name: 'Accommodation', amount: 'CNY 750 / month' },
+      { name: 'Medical examination', amount: 'CNY 400–500 (one-time)' },
+      { name: 'Residence permit extension', amount: 'CNY 400 / year' },
+      { name: 'Registration fee', amount: 'CNY 800 (one-time)' },
     ],
     applicationRequirements: [
-      "Копия паспорта",  
-      "Фото паспортного размера",
-      "Аттестат/Диплом о  полном среднем образовании и табель успеваемости",
-      "Медицинская справка (Health Check Report)",
-      "Справка о несудимости",
-      "Заполненная анкета",
-      "Два рекомендательных письма",
-      "Видео-самопрезентация (3-4 минуты)"
+      'Passport copy',
+      'Passport-sized photo (white background)',
+      'High school diploma and full transcript',
+      'Medical examination report',
+      'Police clearance certificate',
+      'Completed application form',
+      'Two recommendation letters',
+      '3–4 minute self-introduction video',
+      'Bank statement showing a minimum balance of USD 5,000',
     ],
-    image: "https://i.postimg.cc/MZc6qN45/61801-china.avif"
+    image: 'https://i.postimg.cc/MZc6qN45/61801-china.avif',
   },
   {
-    id: "2",
-    name: "China University of Petroleum (中国石油大学)",
-    location: "г. Пекин, Китай", 
-    slug: "China-University-of-Petroleum",
-    logo: "https://i.postimg.cc/mDGB2gHG/China-University-Of-Petroleum-badge-svg.png",
+    id: '2',
+    name: 'China University of Petroleum (中国石油大学)',
+    location: 'Beijing, China',
+    slug: 'China-University-of-Petroleum',
     countryRanking: 63,
     worldRanking: 568,
-    description: "Китайский нефтяной университет (Пекин) - CUPB - является ведущим национальным университетом Китая, находящимся под непосредственным управлением Министерства образования. Университет славится своими сильными программами в области нефтяной и нефтехимической инженерии, а также предлагает качественное образование в сферах компьютерных наук, экономики и других дисциплин. CUPB активно развивает международное сотрудничество и привлекает студентов со всего мира.",
+    logo: 'https://i.postimg.cc/mDGB2gHG/China-University-Of-Petroleum-badge-svg.png',
+    description:
+      'China University of Petroleum – Beijing (CUPB) is a leading national university overseen by the Ministry of Education. The university is renowned for petroleum and petrochemical engineering and also offers competitive programmes in computer science, economics, and environmental disciplines. CUPB welcomes international students through extensive research partnerships and scholarship pathways.',
     programs: [
-      { name: "Компьютерные науки и технологии (Computer Science and Technology)", language: "Английский" },
-      { name: "Международная торговля и экономика (International Trade and Economics)", language: "Английский" },
-      { name: "Химическая инженерия и технологии (Chemical Engineering and Technologies)", language: "Английский" },
-      { name: "Нефтегазовая инженерия (Petroleum Engineering)", language: "Английский" }
+      { name: 'Computer Science and Technology', language: 'English' },
+      { name: 'International Trade and Economics', language: 'English' },
+      { name: 'Chemical Engineering and Technologies', language: 'English' },
+      { name: 'Petroleum Engineering', language: 'English' },
     ],
     scholarships: [
       {
-        type: "Стипендия Типа А",  
+        type: 'Type A Scholarship',
         benefits: [
-          "Бесплатное обучение",
-          "Бесплатное проживание (2-х местная комната)",
-          "Бесплатная страховка",
-          "Ежемесячная стипендия: 1800 юаней" 
-        ]
+          'Full tuition waiver',
+          'Double-room dormitory',
+          'Medical insurance',
+          'Monthly stipend: CNY 1,800',
+        ],
       },
       {
-        type: "Стипендия Типа B",  
-        benefits: [
-          "Бесплатное обучение", 
-          "Бесплатное проживание (2-х местная комната)",
-          "Бесплатная страховка"
-        ]
+        type: 'Type B Scholarship',
+        benefits: ['Full tuition waiver', 'Double-room dormitory', 'Medical insurance'],
       },
       {
-        type: "Стипендия Типа C",  
-        benefits: [
-          "Бесплатное проживание (2-х местная комната)",
-          "Бесплатная страховка"
-        ]
-      }
+        type: 'Type C Scholarship',
+        benefits: ['Double-room dormitory', 'Medical insurance'],
+      },
     ],
     additionalCosts: [
-      { name: "Обучение", amount: "25000 юаней/год" }, 
-      { name: "Проживание", amount: "1200-1500 юаней/месяц" },
-      { name: "Медицинская страховка", amount: "800 юаней/год" }, 
-      { name: "Взнос за ВНЖ (Resident Permit)", amount: "400 юаней/год" },
-      { name: "Медицинский осмотр", amount: "400 юаней" }, 
-      { name: "Регистрационный взнос (только 1-й год)", amount: "400 юаней" } 
+      { name: 'Tuition (if self-funded)', amount: 'CNY 25,000 / year' },
+      { name: 'Accommodation', amount: 'CNY 1,200 – 1,500 / month' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
+      { name: 'Residence permit', amount: 'CNY 400 / year' },
+      { name: 'Medical examination', amount: 'CNY 400 (one-time)' },
+      { name: 'Application fee', amount: 'CNY 400 (first year only)' },
     ],
     applicationRequirements: [
-      "Копия паспорта",  
-      "Фото паспортного размера",
-      "Аттестат/Диплом о полном среднем образовании и табель успеваемости",
-      "Медицинская справка (Health Check Report)",
-      "Справка о несудимости",
-      "Заполненная анкета",
-      "Два рекомендательных письма"
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma and academic transcript',
+      'Medical examination report',
+      'Police clearance certificate',
+      'Completed application form',
+      'Two recommendation letters',
     ],
-    englishRequirements: "IELTS 6.0, TOEFL 75 или выше, или эквивалентный сертификат владения языком",  
-    applicationDeadline: "30 Мая 2025",  
-    image: "https://i.postimg.cc/Vkf2Lbvw/china001-2.jpg"
+    englishRequirements: 'IELTS 6.0, TOEFL iBT 75, or equivalent proof of English proficiency.',
+    applicationDeadline: 'May 30, 2025',
+    image: 'https://i.postimg.cc/Vkf2Lbvw/china001-2.jpg',
   },
   {
-    id: "3",
-    name: "Harbin Vocational Institute (哈尔滨职业技术学院)",  
-    location: "г. Харбин, провинция Хэйлунцзян, Китай", 
-    slug: "Harbin-Vocational-Institute",
-    description: "Харбинский профессиональный институт предлагает практико-ориентированное профессиональное образование в различных областях, включая электронную коммерцию, мультимедийные технологии и маркетинг. Институт расположен в Харбине, известном своей уникальной архитектурой и культурным наследием. Обучение фокусируется на развитии практических навыков, востребованных на современном рынке труда.",
+    id: '3',
+    name: 'Harbin Vocational Institute (哈尔滨职业技术学院)',
+    location: 'Harbin, Heilongjiang, China',
+    slug: 'Harbin-Vocational-Institute',
+    description:
+      'Harbin Vocational Institute offers hands-on training in e-commerce, multimedia technology, marketing, and related fields. Situated in historic Harbin, the institute focuses on practical skills that match workforce demand and combines classroom learning with extensive internships.',
     programs: [
-      { name: "Трансграничная электронная коммерция (Cross-border E-commerce)", language: "Китайский" },
-      { name: "Интернет-маркетинг и электронная коммерция (Internet Marketing and E-commerce)", language: "Китайский" },
-      { name: "Кино- и теле- мультимедийные технологии (Film and Television Multimedia Technology)", language: "Китайский" }
+      { name: 'Cross-border E-commerce', language: 'Chinese' },
+      { name: 'Internet Marketing and E-commerce', language: 'Chinese' },
+      { name: 'Film and Television Multimedia Technology', language: 'Chinese' },
     ],
     scholarships: [
       {
-        type: "Полный грант",  
+        type: 'Full Scholarship',
         benefits: [
-          "Бесплатное обучение", 
-          "Бесплатное проживание",
-          "Ежемесячная стипендия: 1000 юаней (10 месяцев в году)" 
-        ]
-      }
+          'Tuition waiver',
+          'On-campus accommodation',
+          'Monthly stipend: CNY 1,000 (10 months per year)',
+        ],
+      },
     ],
     additionalCosts: [
-      { name: "Учебники", amount: "400 юаней/год" },  
-      { name: "Медицинская страховка", amount: "800 юаней/год" },
-      { name: "Медицинский осмотр", amount: "400 юаней/год" },
-      { name: "ВНЖ (Resident Permit)", amount: "400 юаней/год" }, 
-      { name: "Залог за общежитие", amount: "500 юаней (возвратный)" }  
+      { name: 'Textbooks', amount: 'CNY 400 / year' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
+      { name: 'Medical examination', amount: 'CNY 400 / year' },
+      { name: 'Residence permit', amount: 'CNY 400 / year' },
+      { name: 'Dormitory deposit', amount: 'CNY 500 (refundable)' },
     ],
     applicationRequirements: [
-      "Копия паспорта",
-      "Фото паспортного размера",
-      "Аттестат/Диплом о полном среднем образовании и табель успеваемости",
-      "Медицинская справка (Health Check Report)",
-      "Справка о несудимости",
-      "Заполненная анкета"
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma and transcript',
+      'Medical examination report',
+      'Police clearance certificate',
+      'Completed application form',
     ],
-    image: "https://i.postimg.cc/Hs2PKs2h/Harbin-2.jpg"
+    image: 'https://i.postimg.cc/Hs2PKs2h/Harbin-2.jpg',
   },
   {
-    id: "4",
-    name: "Changzhou University (常州大学)", 
-    location: "г.Чанчжоу, Китай", 
-    slug: "Changzhou-University",
+    id: '4',
+    name: 'Changzhou University (常州大学)',
+    location: 'Changzhou, China',
+    slug: 'Changzhou-University',
     countryRanking: 179,
     worldRanking: 2788,
-    logo: "",
-    description: "Чанчжоуский университет - многопрофильное высшее учебное заведение, расположенное в провинции Цзянсу. Университет предлагает современные образовательные программы в области инженерии, компьютерных наук, экономики и химических технологий. Особое внимание уделяется практико-ориентированному обучению и международному сотрудничеству. Университет располагает современной инфраструктурой и активно развивает научно-исследовательскую деятельность.",
+    logo: '',
+    description:
+      'Changzhou University is a comprehensive university in Jiangsu Province with strengths in engineering, computer science, economics, and chemical technologies. The university emphasises applied learning, research partnerships with industry, and international collaboration.',
     programs: [
-      { name: "Компьютерные науки и технологии(Computer Science and Technology) ", language: "Английский" },
-      { name: "Нефтяная инженерия (Patroleum Engineering)", language: "Английский" },
-      { name: "Международная экономика и торговля (Internation Economic and Trade)", language: "Английский" },
-      { name: "Химическая инженерия и Технологии (Chemical Engineering & Technology)", language: "Английский" }
+      { name: 'Computer Science and Technology', language: 'English' },
+      { name: 'Petroleum Engineering', language: 'English' },
+      { name: 'International Economics and Trade', language: 'English' },
+      { name: 'Chemical Engineering & Technology', language: 'English' },
     ],
     scholarships: [
       {
-        type: "Стипендия Типа B",
-        benefits: [
-          "Скидка на обучение 60%",
-          "Скидка на проживание"
-        ]
-      }
+        type: 'Type B Scholarship',
+        benefits: ['60% tuition waiver', 'Accommodation discount'],
+      },
     ],
     additionalCosts: [
-      { name: "Проживание", amount: "1800-3000 юаней/месяц" },
-      { name: "Медицинский осмотр", amount: "343 юаней" },   
-      { name: "Продление визы (ВНЖ)", amount: "800 юаней" },   
-      { name: "Регистрационный взнос", amount: "800 юаней" },   
-      { name: "Регистрационный взнос", amount: "5000 юаней" }
+      { name: 'Accommodation', amount: 'CNY 1,800 – 3,000 / month' },
+      { name: 'Medical examination', amount: 'CNY 343 (one-time)' },
+      { name: 'Residence permit', amount: 'CNY 800 / year' },
+      { name: 'Application fee', amount: 'CNY 800 (one-time)' },
+      { name: 'Tuition deposit', amount: 'CNY 5,000 (one-time)' },
     ],
     applicationRequirements: [
-      "Загранпаспорт",  
-      "Копия паспорта",  
-      "Фото паспортного размера",
-      "Аттестат/Диплом о полном среднем образовании и табель успеваемости",
-      "Медицинская справка (Health Check Report)",
-      "Справка о несудимости",
-      "Заполненная анкета",
-      "Два рекомендательных письма",
-      "Видео-самопрезентация (3-4 минуты)",
-      "Выписка из банка с балансом $5000"
+      'Valid passport',
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma and transcript',
+      'Medical examination report',
+      'Police clearance certificate',
+      'Completed application form',
     ],
-    image: "https://i.postimg.cc/dQCTQgf7/china-arch.jpg"
-  }, 
+    image: 'https://i.postimg.cc/dQCTQgf7/china-arch.jpg',
+  },
   {
-    id: "5",
-    name: "Harbin Institute of Technology, Shenzhen (哈尔滨工业大学深圳)", 
-    location: "г. Шэньчжэнь, Китай", 
-    slug: "Harbin-Institute-of-Technology-Shenzhen",
+    id: '5',
+    name: 'Harbin Institute of Technology, Shenzhen (哈尔滨工业大学深圳)',
+    location: 'Shenzhen, China',
+    slug: 'Harbin-Institute-of-Technology-Shenzhen',
     countryRanking: 13,
     worldRanking: 196,
-    logo: "", // Пример лого (лучше найти официальный URL)
-    description: "Кампус Харбинского политехнического университета в Шэньчжэне (HIT Shenzhen) является важной частью HIT и фокусируется на подготовке высококвалифицированных кадров и проведении передовых исследований, тесно сотрудничая с инновационной экосистемой Шэньчжэня.",
+    logo: '',
+    description:
+      'Harbin Institute of Technology, Shenzhen (HITSZ) is a key campus of HIT, integrating advanced research with the innovation ecosystem of Shenzhen. The campus nurtures high-level engineering talent across robotics, electronics, architecture, and business disciplines.',
     programs: [
-      { name: "Компьютерные науки и технологии (Computer Science and Technology)", language: "Английский" },
-      { name: "Инженерия связи (Communication Engineering)", language: "Английский" },
-      { name: "Оптоэлектронная информационная наука и инженерия (Opto-Electronic Information Science and Engineering)", language: "Английский" },
-      { name: "Технология электронной упаковки (Electronic Packaging Technology)", language: "Английский" },
-      { name: "Робототехника (Robot Engineering)", language: "Английский" },
-      { name: "Проектирование, производство и автоматизация механического оборудования (Mechanical Design Manufacturing and Automation)", language: "Английский" },
-      { name: "Электротехника и автоматизация (Electrical Engineering and Automation)", language: "Английский" },
-      { name: "Автоматизация (Automation)", language: "Английский" },
-      { name: "Экономика (Economics)", language: "Английский" },
-      { name: "Бизнес-администрирование (Business Administration)", language: "Английский" },
-      { name: "Архитектура (Architecture)", language: "Английский" },
-      { name: "Городское планирование (Urban Planning)", language: "Английский" }
+      { name: 'Computer Science and Technology', language: 'English' },
+      { name: 'Communication Engineering', language: 'English' },
+      { name: 'Opto-Electronic Information Science and Engineering', language: 'English' },
+      { name: 'Electronic Packaging Technology', language: 'English' },
+      { name: 'Robot Engineering', language: 'English' },
+      { name: 'Mechanical Design Manufacturing and Automation', language: 'English' },
+      { name: 'Electrical Engineering and Automation', language: 'English' },
+      { name: 'Automation', language: 'English' },
+      { name: 'Economics', language: 'English' },
+      { name: 'Business Administration', language: 'English' },
+      { name: 'Architecture', language: 'English' },
+      { name: 'Urban Planning', language: 'English' },
     ],
     scholarships: [
       {
-        type: "Стипендия Типа A",  
-        benefits: [
-          "Полностью бесплатное обучение",
-          "Ежемесячная стипендия: 1000 юаней" 
-        ]
+        type: 'Type A Scholarship',
+        benefits: ['Full tuition waiver', 'Monthly stipend: CNY 1,000'],
       },
       {
-        type: "Стипендия Типа B",  
-        benefits: [
-          "Полностью бесплатное обучение"
-        ]
+        type: 'Type B Scholarship',
+        benefits: ['Full tuition waiver'],
       },
       {
-        type: "Стипендия Типа C",  
-        benefits: [
-          "50% скидка на обучение (оплата ~15000 юаней/год)"
-        ]
+        type: 'Type C Scholarship',
+        benefits: ['50% tuition waiver (approximately CNY 15,000 / year payable)'],
       },
       {
-        type: "Стипендия Типа D",  
-        benefits: [
-          "20% скидка на обучение (оплата ~24000 юаней/год)"
-        ]
-      }
+        type: 'Type D Scholarship',
+        benefits: ['20% tuition waiver (approximately CNY 24,000 / year payable)'],
+      },
     ],
     additionalCosts: [
-      { name: "Проживание (2 чел./комн.)", amount: "500 юаней/месяц" }, 
-      { name: "Проживание (1 чел./комн.)", amount: "1000 юаней/месяц" }, 
-      { name: "Регистрационный взнос", amount: "400 юаней" },
-      { name: "Продление визы (ВНЖ)", amount: "400 юаней/год" }, 
-      { name: "Медицинский осмотр", amount: "500 юаней" }, 
-      { name: "Страховка", amount: "800 юаней/год" } 
+      { name: 'Accommodation (double room)', amount: 'CNY 500 / month' },
+      { name: 'Accommodation (single room)', amount: 'CNY 1,000 / month' },
+      { name: 'Application fee', amount: 'CNY 400 (one-time)' },
+      { name: 'Residence permit', amount: 'CNY 400 / year' },
+      { name: 'Medical examination', amount: 'CNY 500 (one-time)' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
     ],
     applicationRequirements: [
-      "Копия паспорта",  
-      "Фото паспортного размера",
-      "Аттестат/Диплом о полном среднем образовании (или эквивалент) и табель успеваемости",
-      "Медицинская справка (Health Check Up)",
-      "Сертификат владения английским языком (English Proficiency Certificate)", // Уточнено
-      "Справка о несудимости (нотариально заверенная, возможно потребуется легализация в посольстве КНР)", // Уточнено
-      "Выписка с банковского счета (Bank Statement)", // Добавлено
-      "Видео-самопрезентация (Video of self Introduction)", // Добавлено
-      "Заполненная анкета (Application Form)" // Добавлено
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma (or equivalent) and full transcript',
+      'Medical examination report',
+      'English proficiency certificate (IELTS/TOEFL or equivalent)',
+      'Notarised police clearance (may require Chinese embassy authentication)',
+      'Bank statement demonstrating financial capacity',
+      'Self-introduction video',
+      'Completed application form',
     ],
-    applicationDeadline: "10 Июня 2025",  
-    // englishRequirements: "Требуется сертификат (IELTS/TOEFL и т.д.)", // Можно добавить, если нужно явно указать
-    image: "https://i.postimg.cc/Vkk6thKW/b311b015e060ca77b6c88b9f370970dc.jpg" // Пример изображения Шэньчжэня
+    applicationDeadline: 'June 10, 2025',
+    image: 'https://i.postimg.cc/Vkk6thKW/b311b015e060ca77b6c88b9f370970dc.jpg',
   },
   {
-  id: "6",
-  name: "South China University of Technology (华南理工大学)",
-  location: "г. Гуанчжоу, провинция Гуандун, Китай",
-  slug: "South-China-University-of-Technology",
-  countryRanking: 28,
-  worldRanking: 213,
-  logo: "",
-  description: "South China University of Technology (SCUT) является ведущим университетом Китая, входящим в проекты 211 и 985. Университет предлагает высококачественное образование в области компьютерных наук, международной торговли и экономики, а также других дисциплин. SCUT расположен в динамичном городе Гуанчжоу, что предоставляет студентам отличные возможности для академического и профессионального роста.",
-  programs: [
-  { name: "Компьютерные науки и технологии (Computer Science and Technology)", language: "Английский" },
-  { name: "Международная торговля и экономика (International Trade and Economics)", language: "Английский" }
-  ],
-  scholarships: [
-  {
-  type: "Стипендия Типа A",
-  benefits: [
-  "Бесплатное обучение на 4 года"
-  ]
+    id: '6',
+    name: 'South China University of Technology (华南理工大学)',
+    location: 'Guangzhou, Guangdong, China',
+    slug: 'South-China-University-of-Technology',
+    countryRanking: 28,
+    worldRanking: 213,
+    logo: '',
+    description:
+      'South China University of Technology (SCUT) is a Double First-Class university renowned for engineering, science, and management. Located in Guangzhou, SCUT provides international students with access to world-class laboratories, internships in the Greater Bay Area, and strong industry networks.',
+    programs: [
+      { name: 'Computer Science and Technology', language: 'English' },
+      { name: 'International Trade and Economics', language: 'English' },
+    ],
+    scholarships: [
+      { type: 'Type A Scholarship', benefits: ['Full tuition waiver for four years'] },
+      { type: 'Type B Scholarship', benefits: ['50% tuition waiver for four years'] },
+      { type: 'Type C Scholarship', benefits: ['50% tuition waiver for the first two years'] },
+      { type: 'Guangdong Government Scholarship', benefits: ['CNY 10,000 per year'] },
+    ],
+    additionalCosts: [
+      { name: 'Tuition (if self-funded)', amount: 'CNY 26,000 / year' },
+      { name: 'Accommodation (double room)', amount: 'CNY 27 / day' },
+      { name: 'Accommodation (quad room)', amount: 'CNY 12 / day' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
+      { name: 'Residence permit', amount: 'CNY 400 / year' },
+      { name: 'Medical examination (year 1)', amount: 'CNY 400 (one-time)' },
+      { name: 'Application fee (year 1)', amount: 'CNY 450 (one-time)' },
+    ],
+    applicationRequirements: [
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma and transcript',
+      'IELTS 5.5, TOEFL iBT 68, or equivalent proof of English',
+      'Medical examination report',
+      'Police clearance certificate notarised by the Chinese embassy',
+      'Completed application form',
+    ],
+    applicationDeadline: 'June 30, 2025',
+    image: 'https://i.postimg.cc/d07VHyP7/pexels-iriser-1366957.jpg',
   },
   {
-  type: "Стипендия Типа B",
-  benefits: [
-  "50% скидка на обучение на 4 года"
-  ]
+    id: '7',
+    name: 'Sichuan University (四川大学)',
+    location: 'Chengdu, Sichuan, China',
+    slug: 'Sichuan-University',
+    countryRanking: 11,
+    worldRanking: 240,
+    logo: '',
+    description:
+      'Sichuan University is one of China’s top comprehensive universities, combining academic excellence with the vibrant cultural environment of Chengdu. The university offers a selection of English-medium programmes spanning software engineering, international business, civil engineering, and tourism management.',
+    programs: [
+      { name: 'Software Engineering', language: 'English' },
+      { name: 'International Business', language: 'English' },
+      { name: 'Civil Engineering', language: 'English' },
+      { name: 'Tourism Management', language: 'English' },
+    ],
+    scholarships: [
+      {
+        type: 'Belt and Road Scholarship',
+        benefits: [
+          'CNY 20,000 per year',
+          'Reimbursement transferred to the student after each semester',
+          'Option to live off-campus (dormitory fee waived)',
+          'IELTS / Duolingo not required',
+        ],
+      },
+    ],
+    additionalCosts: [
+      { name: 'Medical insurance', amount: 'CNY 1,000 / year' },
+      { name: 'Application fee (year 1)', amount: 'CNY 600' },
+      { name: 'Medical examination (year 1)', amount: 'CNY 550' },
+      { name: 'Tuition deposit', amount: 'CNY 7,500' },
+      { name: 'Accommodation (International Business)', amount: 'CNY 1,500 / year' },
+      { name: 'Accommodation (other majors)', amount: 'CNY 4,500 / year' },
+    ],
+    applicationRequirements: [
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma and transcript',
+      'Medical examination report',
+      'Completed application form',
+    ],
+    applicationDeadline: 'May 30, 2025',
+    image: 'https://i.postimg.cc/wjMqMmBW/76-BA27-BEF4-EE2-AC02744-A8-DCC74-7-CD98-D4-A-F21-D45.jpg',
   },
   {
-  type: "Стипендия Типа C",
-  benefits: [
-  "50% скидка на обучение на 2 года"
-  ]
+    id: '8',
+    name: 'Nanjing Normal University (南京师范大学)',
+    location: 'Nanjing, China',
+    slug: 'Nanjing-Normal-University',
+    worldRanking: 610,
+    logo: '',
+    description:
+      'Nanjing Normal University (NNU) is a historic institution offering select English-medium bachelor programmes, including International Economics and Trade. The university provides generous scholarships covering tuition, housing, and stipends for high-achieving students.',
+    programs: [{ name: 'International Economics and Trade', language: 'English' }],
+    scholarships: [
+      {
+        type: 'Type A Scholarship',
+        benefits: ['Full tuition waiver', 'Free accommodation', 'Monthly stipend: CNY 1,000'],
+      },
+      {
+        type: 'Type B Scholarship',
+        benefits: ['Full tuition waiver'],
+      },
+    ],
+    additionalCosts: [
+      { name: 'Tuition (if self-funded)', amount: 'CNY 28,500 / year' },
+      { name: 'Accommodation', amount: 'CNY 4,500 / year' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
+      { name: 'Medical examination', amount: 'CNY 500 / year' },
+      { name: 'Residence permit', amount: 'CNY 400 / year' },
+    ],
+    applicationRequirements: [
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma and transcript',
+      'Medical examination report',
+      'English proficiency certificate (IELTS / TOEFL / Duolingo or equivalent)',
+      'Police clearance certificate',
+      'Bank statement',
+      'Completed application form',
+      'Additional academic achievements (optional)',
+    ],
+    applicationDeadline: 'May 1, 2025',
+    image: 'https://i.postimg.cc/htNBGZ6j/02-1-red-plum-blossom-on-suiyuan-campus.jpg',
   },
   {
-  type: "Стипендия провинции Гуандун",
-  benefits: [
-  "10,000 юаней/год"
-  ]
-  }
-  ],
-  additionalCosts: [
-  { name: "Обучение", amount: "26000 юаней/год" },
-  { name: "Проживание (2 человека в комнате)", amount: "27 юаней/день" },
-  { name: "Проживание (4 человека в комнате)", amount: "12 юаней/день" },
-  { name: "Медицинская страховка", amount: "800 юаней/год" },
-  { name: "Продление визы", amount: "400 юаней/год" },
-  { name: "Медицинский осмотр (только 1-й год)", amount: "400 юаней" },
-  { name: "Регистрационный взнос (только 1-й год)", amount: "450 юаней" }
-  ],
-  applicationRequirements: [
-  "Копия паспорта",
-  "Фото паспортного размера",
-  "Аттестат/Диплом о полном среднем образовании и табель успеваемости",
-  "Сертификат о знании английского языка (IELTS 5.5 или TOEFL 68)",
-  "Медицинская справка (Health Check Report)",
-  "Справка о несудимости (нотариально заверенная в посольстве Китая)",
-  "Заполненная анкета"
-  ],
-  applicationDeadline: "30 Июня 2025",
-  image: "https://i.postimg.cc/d07VHyP7/pexels-iriser-1366957.jpg"
+    id: '9',
+    name: 'Southwest Petroleum University (西南石油大学)',
+    location: 'Chengdu, Sichuan, China',
+    slug: 'Southwest-Petroleum-University',
+    countryRanking: 185,
+    worldRanking: 1384,
+    logo: '',
+    description:
+      'Southwest Petroleum University (SWPU) specialises in petroleum engineering and related technical fields. The university offers English-medium bachelor programmes with tuition scholarships and performance-based awards for international students.',
+    programs: [
+      { name: 'Petroleum Engineering', language: 'English' },
+      { name: 'Resource Exploration Engineering', language: 'English' },
+      { name: 'Chemical Engineering and Technology', language: 'English' },
+      { name: 'Mechanical Engineering', language: 'English' },
+      { name: 'Computer Science and Technology', language: 'English' },
+      { name: 'Civil Engineering', language: 'English' },
+      { name: 'Electrical Engineering and Automation', language: 'English' },
+      { name: 'International Economics and Trade', language: 'English' },
+      { name: 'New Energy Science and Engineering', language: 'English' },
+    ],
+    scholarships: [
+      { type: 'Type A Scholarship', benefits: ['CNY 20,000 per year'] },
+      { type: 'Type B Scholarship', benefits: ['CNY 8,000 per year'] },
+      { type: 'Type C Scholarship', benefits: ['CNY 5,000 per year'] },
+      { type: 'Type D Scholarship', benefits: ['CNY 2,000 per year'] },
+    ],
+    additionalCosts: [
+      { name: 'Accommodation (male dorm, 3 students)', amount: 'CNY 1,600 / year' },
+      { name: 'Accommodation (female dorm, 2–3 students)', amount: 'CNY 3,000 / year' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
+      { name: 'Residence permit', amount: 'CNY 400 / year' },
+      { name: 'Application fee (year 1)', amount: 'CNY 600' },
+      { name: 'Medical examination (year 1)', amount: 'CNY 550' },
+    ],
+    applicationRequirements: [
+      'Passport copy',
+      'Passport-sized photo',
+      'High school diploma',
+      'Medical examination report',
+      'Completed application form',
+    ],
+    applicationDeadline: 'June 15, 2025',
+    image: 'https://i.postimg.cc/3JcMLbKB/4976.jpg',
   },
-{
-id: "7",
-name: "Sichuan University (四川大学)",
-location: "г. Чэнду, провинция Сычуань, Китай",
-slug: "Sichuan-University",
-countryRanking: 11,
-worldRanking: 240,
-logo: "",
-description: "Sichuan University является одним из ведущих университетов Китая, занимая 11 место в национальном рейтинге. Университет предлагает широкий спектр программ на английском языке, включая программную инженерию, международный бизнес, гражданское строительство и управление туризмом. Расположенный в городе Чэнду, университет сочетает высокое качество образования с богатой культурной средой.",
-programs: [
-{ name: "Программная инженерия (Software Engineering)", language: "Английский" },
-{ name: "Международный бизнес (International Business)", language: "Английский" },
-{ name: "Гражданское строительство (Civil Engineering)", language: "Английский" },
-{ name: "Управление туризмом (Tourism Management)", language: "Английский" }
-],
-scholarships: [
-{
-type: "Стипендия 'Пояс и путь'",
-benefits: [
-"20,000 юаней/год",
-"Возврат средств на банковский счет студента после окончания каждого семестра",
-"Возможность проживания вне кампуса (освобождает от оплаты общежития)",
-"Не требуется сертификат IELTS или Duolingo"
-]
-}
-],
-additionalCosts: [
-{ name: "Медицинская страховка", amount: "1000 юаней/год" },
-{ name: "Регистрационный взнос (только 1-й год)", amount: "600 юаней" },
-{ name: "Медицинский осмотр (только 1-й год)", amount: "550 юаней" },
-{ name: "Депозит (обучение)", amount: "7500 юаней" },
-{ name: "Проживание (Международный бизнес)", amount: "1500 юаней/год" },
-{ name: "Проживание (другие специальности)", amount: "4500 юаней/год" }
-],
-applicationRequirements: [
-"Копия паспорта",
-"Фото паспортного размера",
-"Аттестат/Диплом о полном среднем образовании и табель успеваемости",
-"Медицинская справка (Health Check Report)",
-"Заполненная анкета"
-],
-applicationDeadline: "30 Мая 2025",
-image: "https://i.postimg.cc/wjMqMmBW/76-BA27-BEF4-EE2-AC02744-A8-DCC74-7-CD98-D4-A-F21-D45.jpg"
-},
-{
-id: "8",
-name: "Nanjing Normal University (南京师范大学)",
-location: "г. Нанкин, Китай",
-slug: "Nanjing-Normal-University",
-worldRanking: 610,
-logo: "",
-description: "Nanjing Normal University предлагает программы бакалавриата на английском языке, включая международную экономику и торговлю. Университет предоставляет стипендии, покрывающие обучение и проживание, а также ежемесячную стипендию для лучших студентов.",
-programs: [
-{ name: "Международная экономика и торговля (International Economics and Trade)", language: "Английский" }
-],
-scholarships: [
-{
-type: "Стипендия Типа A",
-benefits: [
-"Бесплатное обучение",
-"Бесплатное проживание",
-"Ежемесячная стипендия: 1000 юаней"
-]
-},
-{
-type: "Стипендия Типа B",
-benefits: [
-"Бесплатное обучение"
-]
-}
-],
-additionalCosts: [
-{ name: "Обучение", amount: "28500 юаней/год" },
-{ name: "Проживание", amount: "4500 юаней/год" },
-{ name: "Медицинская страховка", amount: "800 юаней/год" },
-{ name: "Медицинский осмотр", amount: "500 юаней/год" },
-{ name: "Продление визы", amount: "400 юаней/год" }
-],
-applicationRequirements: [
-"Копия паспорта",
-"Фото паспортного размера",
-"Аттестат/Диплом о полном среднем образовании и табель успеваемости",
-"Медицинская справка (Health Check Report)",
-"Сертификат о знании английского языка (IELTS/TOEFL/Duolingo) или подтверждение от предыдущего учебного заведения",
-"Справка о несудимости",
-"Выписка из банка",
-"Заполненная анкета",
-"Дополнительные учебные достижения (при наличии)"
-],
-applicationDeadline: "1 Мая 2025",
-image: "https://i.postimg.cc/htNBGZ6j/02-1-red-plum-blossom-on-suiyuan-campus.jpg"
-},
-{
-  id: "9",
-  name: "Southwest Petroleum University (西南石油大学)",
-  location: "г. Чэнду, провинция Сычуань, Китай",
-  slug: "Southwest-Petroleum-University",
-  countryRanking: 185,
-  worldRanking: 1384,
-  logo: "",
-  description: "Southwest Petroleum University (SWPU) - специализированный университет в области нефтегазовой инженерии и смежных технических дисциплин. Предлагает бесплатное обучение по программам бакалавриата на английском языке и ежегодные стипендии для успевающих студентов.",
-  programs: [
-    { name: "Нефтяная инженерия (Petroleum Engineering)", language: "Английский" },
-    { name: "Разведка ресурсов (Resource Exploration Engineering)", language: "Английский" },
-    { name: "Химическая инженерия (Chemical Engineering and Technology)", language: "Английский" },
-    { name: "Механическая инженерия (Mechanical Engineering)", language: "Английский" },
-    { name: "Компьютерные науки (Computer Science and Technology)", language: "Английский" },
-    { name: "Гражданское строительство (Civil Engineering)", language: "Английский" },
-    { name: "Электротехника и автоматизация (Electrical Engineering and Automation)", language: "Английский" },
-    { name: "Международная экономика и торговля (International Economics and Trade)", language: "Английский" },
-    { name: "Инженерия новых энергетических систем (New Energy Science and Engineering)", language: "Английский" }
-  ],
-  scholarships: [
-    { type: "Стипендия Типа A", benefits: ["20000 юаней/год"] },
-    { type: "Стипендия Типа B", benefits: ["8000 юаней/год"] },
-    { type: "Стипендия Типа C", benefits: ["5000 юаней/год"] },
-    { type: "Стипендия Типа D", benefits: ["2000 юаней/год"] }
-  ],
-  additionalCosts: [
-    { name: "Проживание (мужское, 3 человека)", amount: "1600 юаней/год" },
-    { name: "Проживание (женское, 2-3 человека)", amount: "3000 юаней/год" },
-    { name: "Медицинская страховка", amount: "800 юаней/год" },
-    { name: "Продление визы", amount: "400 юаней/год" },
-    { name: "Регистрационный взнос", amount: "600 юаней (только 1-й год)" },
-    { name: "Медицинский осмотр", amount: "550 юаней (только 1-й год)" }
-  ],
-  applicationRequirements: [
-    "Копия паспорта",
-    "Фото паспортного размера",
-    "Аттестат/Диплом о полном среднем образовании",
-    "Медицинская справка",
-    "Заполненная анкета"
-  ],
-  applicationDeadline: "15 Июня 2025",
-  image: "https://i.postimg.cc/3JcMLbKB/4976.jpg"
-},
-{
-  id: "10",
-  name: "Central South University of Forestry and Technology, Changsha (中南林业科技大学)",
-  location: "г. Чанша, провинция Хунань, Китай",
-  countryRanking: 229, // По данным BCUR Best Chinese Universities Ranking - ShanghaiRanking, апрель 2024 г.
-  worldRanking: 1530, // По данным US News: Best Global Universities, июнь 2024 г.
-  slug: "Central-South-University-of-Forestry-and-Technology",
-  logo: "", // Официальный URL логотипа не найден, оставлено пустым
-  description: "Центрально-южный университет лесного хозяйства и технологий (CSUFT), основанный в 1958 году, ориентирован на подготовку высококвалифицированных специалистов и глобальных талантов для устойчивого будущего. Расположенный в городе Чанша, столице провинции Хунань и известном историко-культурном центре, университет предлагает международно-ориентированные 4-летние программы бакалавриата. CSUFT является многопрофильным учебным заведением с широким спектром дисциплин и активно развивает международное сотрудничество, привлекая студентов из разных стран мира. Университет предоставляет отличные возможности для построения карьеры. Места на международные программы ограничены (около 110 мест).",
-  programs: [
-    { name: "Международная экономика и торговля (International Economics and Trade)", language: "Китайский или Билингвальный (Китайский + Английский)" },
-    { name: "Пищевая наука и инженерия (Food Science and Engineering)", language: "Китайский или Билингвальный (Китайский + Английский)" },
-    { name: "Качество и безопасность пищевых продуктов (Food Quality and Safety)", language: "Китайский или Билингвальный (Китайский + Английский)" },
-    { name: "Зерновая инженерия (Grain Engineering)", language: "Китайский или Билингвальный (Китайский + Английский)" },
-    { name: "Лесное и химическое машиностроение (Forestry and Chemical Engineering)", language: "Китайский или Билингвальный (Китайский + Английский)" }
-  ],
-  scholarships: [
-    {
-      type: "Стипендия Первого уровня",
-      benefits: [
-        "22000 юаней в год"
-      ]
-    },
-    {
-      type: "Стипендия Второго уровня",
-      benefits: [
-        "16000 юаней в год"
-      ]
-    },
-    {
-      type: "Стипендия Третьего уровня",
-      benefits: [
-        "8000 юаней в год"
-      ]
-    }
-  ],
-  additionalCosts: [
-    { name: "Обучение (годовая плата)", amount: "8000 - 16500 юаней/год" },
-    { name: "Проживание", amount: "от 1500 юаней/год (например, в 4-х местной комнате)" },
-    { name: "Медицинская страховка", amount: "800 юаней/год" },
-    { name: "Вид на жительство (ВНЖ)", amount: "400 юаней/год (примерно)" },
-    { name: "Медицинский осмотр", amount: "около 500 юаней (единоразово по прибытии)" },
-    { name: "Регистрационный взнос", amount: "400-800 юаней (единоразово, если применимо)" }
-  ],
-  applicationRequirements: [
-    "Копия паспорта (срок действия не менее 1 года)",
-    "Фото паспортного размера (недавнее)",
-    "Аттестат/Диплом о полном среднем образовании (или эквивалент) и табель успеваемости (нотариально заверенные копии и переводы на китайский или английский язык)",
-    "Медицинская справка (Foreigner Physical Examination Form, действительная на момент подачи)",
-    "Справка о несудимости, можно онлайн через госуслуги",
-    "Заполненная анкета университета",
-    "Сертификат владения языком (HSK для программ на китайском языке; IELTS/TOEFL или эквивалент для билингвальных/англоязычных программ, если требуется)",
-    "Рекомендательные письма (1-2, если требуются для выбранной программы)",
-    "Учебный план или мотивационное письмо (если требуется)",
-    "Видео-самопрезентация (если требуется университетом)"
-  ],
-  image: "https://i.postimg.cc/CMJGg452/FOREIGN1711090584768-Z3-FODYZLY5.jpg" // Пример изображения Чанша, Китай (замените на актуальное, если необходимо)
-}
+  {
+    id: '10',
+    name: 'Central South University of Forestry and Technology (中南林业科技大学)',
+    location: 'Changsha, Hunan, China',
+    slug: 'Central-South-University-of-Forestry-and-Technology',
+    countryRanking: 229,
+    worldRanking: 1530,
+    logo: '',
+    description:
+      'Central South University of Forestry and Technology (CSUFT), established in 1958, is a multidisciplinary university with a focus on sustainable development, forestry, engineering, and business. The campus in Changsha offers international bachelor programmes with limited seats (approximately 110) and provides strong career support.',
+    programs: [
+      {
+        name: 'International Economics and Trade',
+        language: 'Chinese or bilingual (Chinese + English)',
+      },
+      { name: 'Food Science and Engineering', language: 'Chinese or bilingual (Chinese + English)' },
+      { name: 'Food Quality and Safety', language: 'Chinese or bilingual (Chinese + English)' },
+      { name: 'Grain Engineering', language: 'Chinese or bilingual (Chinese + English)' },
+      {
+        name: 'Forestry and Chemical Engineering',
+        language: 'Chinese or bilingual (Chinese + English)',
+      },
+    ],
+    scholarships: [
+      { type: 'First-tier Scholarship', benefits: ['CNY 22,000 per year'] },
+      { type: 'Second-tier Scholarship', benefits: ['CNY 16,000 per year'] },
+      { type: 'Third-tier Scholarship', benefits: ['CNY 8,000 per year'] },
+    ],
+    additionalCosts: [
+      { name: 'Tuition (depending on major)', amount: 'CNY 8,000 – 16,500 / year' },
+      { name: 'Accommodation', amount: 'From CNY 1,500 / year (4-person room)' },
+      { name: 'Medical insurance', amount: 'CNY 800 / year' },
+      { name: 'Residence permit', amount: 'CNY 400 / year (approx.)' },
+      { name: 'Medical examination', amount: 'Around CNY 500 (one-time upon arrival)' },
+      { name: 'Application fee', amount: 'CNY 400 – 800 (one-time)' },
+    ],
+    applicationRequirements: [
+      'Passport copy (valid for at least one year)',
+      'Passport-sized photo',
+      'High school diploma and full transcript (notarised with Chinese or English translation)',
+      'Medical examination report (Foreigner Physical Examination Form)',
+      'Police clearance certificate',
+      'Completed university application form',
+      'Language proficiency certificate (HSK / IELTS / TOEFL as required)',
+      '1–2 recommendation letters (if required by the programme)',
+      'Study plan or motivation letter (if required)',
+      'Self-introduction video (if requested)',
+    ],
+    image: 'https://i.postimg.cc/CMJGg452/FOREIGN1711090584768-Z3-FODYZLY5.jpg',
+  },
 ];

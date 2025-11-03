@@ -16,6 +16,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { Analytics } from '@vercel/analytics/react';
 import PrivacyPolicy from './pages/PrivacyPolicy';  
 import TermsOfService from './pages/TermsOfService'; 
+import AdminPanel from './pages/AdminPanel';
 
 // --- AOS ИМПОРТЫ ---
 import AOS from 'aos';
@@ -58,6 +59,7 @@ function App() {
                 <Route path="/universities/:slugOrId" element={<UniversityDetail />} />
                 <Route path="/privacypolicy" element={<PrivacyPolicy />} />
                 <Route path="/termsofservice" element={<TermsOfService />} />
+                <Route path="/admin" element={<AdminPanel />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </main>
@@ -65,10 +67,10 @@ function App() {
 
             {/* Кнопка WhatsApp */}
             <a
-              href="https://wa.me/77775658706"
+              href="https://wa.me/8615114593047"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Написать в WhatsApp"
+              aria-label="Text us on WhatsApp"
               className="fixed bottom-6 right-6 z-[60] bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 animate-pulse-whatsapp" // Увеличен z-index на всякий случай
             >
               <FaWhatsapp size={28} />

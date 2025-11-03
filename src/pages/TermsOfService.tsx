@@ -1,4 +1,3 @@
-// src/pages/TermsOfService.tsx
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -7,85 +6,147 @@ const TermsOfService: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Условия использования | Viva-Tour</title>
-        <meta name="description" content="Условия использования сайта и услуг компании Viva-Tour." />
+        <title>Terms of Service | PR International Consultancy</title>
+        <meta
+          name="description"
+          content="Read the terms that govern your use of PR International Consultancy’s website, services, and resources for studying in China."
+        />
       </Helmet>
       <div className="min-h-screen pt-24 pb-16 bg-gray-50 overflow-hidden">
         <div className="container mx-auto px-4 py-12">
           <div className="bg-white rounded-lg shadow-xl p-6 md:p-10 lg:p-12 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-4xl mx-auto">
-            <h1 data-aos="fade-down">Условия использования</h1>
+            <h1 data-aos="fade-down">Terms of Service</h1>
 
-            <p data-aos="fade-up">Дата последнего обновления: [2025-05-12]</p>
+            <p data-aos="fade-up">Last updated: 12 May 2025</p>
 
-            <h2 data-aos="fade-up" data-aos-delay="50">1. Введение</h2>
+            <h2 data-aos="fade-up" data-aos-delay="50">1. Introduction</h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              Добро пожаловать на сайт Вива-Тур (далее – "Сайт"). Настоящие Условия использования (далее – "Условия") регулируют ваш доступ к Сайту и его использование. Пожалуйста, внимательно прочтите эти Условия перед использованием Сайта. Используя Сайт, вы подтверждаете, что прочитали, поняли и согласны соблюдать настоящие Условия. Если вы не согласны с Условиями, пожалуйста, не используйте Сайт.
+              Welcome to PR International Consultancy Pvt Ltd (“PR International Consultancy”, “we”, “us” or “our”).
+              These Terms of Service (“Terms”) govern your access to and use of our website, any subdomains, and the
+              services, tools, and content provided through it (collectively, the “Services”). By using our Services,
+              you agree to these Terms. If you do not agree, please refrain from accessing the website.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="150">2. Предоставляемые Услуги</h2>
+            <h2 data-aos="fade-up" data-aos-delay="150">2. Services We Provide</h2>
             <p data-aos="fade-up" data-aos-delay="200">
-              Сайт предоставляет информацию об услугах по содействию в поступлении в учебные заведения Китая, включая консультации, помощь в подборе программ и университетов, оформлении документов и другие сопутствующие услуги (далее – "Услуги"). Полный перечень и описание Услуг доступны на соответствующих страницах Сайта.
+              PR International Consultancy provides advisory and application support services for students seeking to
+              study at universities in China. Services include, but are not limited to, academic counselling, programme
+              selection, scholarship guidance, document preparation, visa assistance, pre-departure briefings, and
+              related logistical support. A detailed overview is available on the{' '}
+              <Link to="/services" className="text-primary hover:text-primary/80">Services</Link> page.
             </p>
             <p data-aos="fade-up" data-aos-delay="250">
-              Мы оставляем за собой право изменять, приостанавливать или прекращать предоставление любых Услуг или доступ к Сайту в любое время без предварительного уведомления.
+              We may modify, suspend, or discontinue parts of the Services at any time. Updates will be posted on the
+              website; continued use after changes constitutes acceptance of the revised Terms.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="300">3. Использование Сайта</h2>
+            <h2 data-aos="fade-up" data-aos-delay="300">3. Acceptable Use</h2>
             <p data-aos="fade-up" data-aos-delay="350">
-              Вы соглашаетесь использовать Сайт только в законных целях и в соответствии с настоящими Условиями. Вы обязуетесь не использовать Сайт:
+              You agree to use the Services in compliance with applicable laws and these Terms. You must not:
             </p>
             <ul data-aos="fade-up" data-aos-delay="400">
-              <li>Каким-либо образом, нарушающим действующее законодательство.</li>
-              <li>С целью эксплуатации, причинения вреда или попытки эксплуатации или причинения вреда несовершеннолетним каким-либо образом.</li>
-              <li>Для передачи или обеспечения отправки любых нежелательных или несанкционированных рекламных или промо-материалов, включая "спам".</li>
-              <li>Для выдачи себя за Вива-Тур, сотрудника Вива-Тур, другого пользователя или любое другое физическое или юридическое лицо.</li>
-              <li>Для совершения любых других действий, которые ограничивают или препятствуют использованию или получению удовольствия от Сайта кем-либо, или которые, по нашему усмотрению, могут нанести вред Вива-Тур или пользователям Сайта.</li>
+              <li>Use the Services for unlawful, fraudulent, or harmful purposes.</li>
+              <li>Submit inaccurate personal data or impersonate another person or organisation.</li>
+              <li>Interfere with or disrupt the operation of the website, servers, or networks.</li>
+              <li>Attempt to gain unauthorised access to other accounts, systems, or data.</li>
+              <li>Transmit unsolicited marketing messages or spam.</li>
             </ul>
 
-            <h2 data-aos="fade-up" data-aos-delay="450">4. Интеллектуальная собственность</h2>
+            <h2 data-aos="fade-up" data-aos-delay="450">4. Eligibility</h2>
             <p data-aos="fade-up" data-aos-delay="500">
-              Сайт и все его содержимое, включая, но не ограничиваясь, тексты, графику, логотипы, изображения, аудио- и видеоматериалы, программное обеспечение, являются собственностью Вива-Тур или ее лицензиаров и защищены законами об авторском праве и другими законами об интеллектуальной собственности.
-            </p>
-            <p data-aos="fade-up" data-aos-delay="550">
-              Вам предоставляется ограниченная, неисключительная, не подлежащая передаче лицензия на доступ и использование Сайта и его содержимого исключительно в личных, некоммерческих целях.
+              To use the Services, you must be at least 16 years old or the age of majority in your jurisdiction. If you
+              are accessing on behalf of a minor, you confirm you have parental or guardian authority to do so.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="600">5. Отказ от гарантий</h2>
-            <p data-aos="fade-up" data-aos-delay="650">
-              Сайт и Услуги предоставляются "как есть" и "по мере доступности" без каких-либо гарантий, явных или подразумеваемых. Мы не даем никаких гарантий относительно полноты, безопасности, надежности, качества, точности или доступности Сайта или Услуг.
+            <h2 data-aos="fade-up" data-aos-delay="550">5. Accounts &amp; Security</h2>
+            <p data-aos="fade-up" data-aos-delay="600">
+              Certain features may require you to create an account. You are responsible for maintaining the
+              confidentiality of your login credentials and for all activities under your account. Notify us immediately
+              of any unauthorised use.
             </p>
+
+            <h2 data-aos="fade-up" data-aos-delay="650">6. Intellectual Property</h2>
             <p data-aos="fade-up" data-aos-delay="700">
-              [Особенно важно, если вы консультант, а не сам ВУЗ]: Мы прилагаем все усилия для предоставления точной и актуальной информации, однако не можем гарантировать поступление в конкретный ВУЗ или получение стипендии, так как окончательное решение всегда остается за приемной комиссией учебного заведения.
+              The website, including text, graphics, logos, icons, images, audio clips, downloads, and software, is the
+              property of PR International Consultancy or its licensors and is protected by international copyright,
+              trademark, and other intellectual property laws. You may view the content for personal, non-commercial use
+              only. Any reproduction, distribution, or derivative work requires prior written consent.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="750">6. Ограничение ответственности</h2>
+            <h2 data-aos="fade-up" data-aos-delay="750">7. User Content</h2>
             <p data-aos="fade-up" data-aos-delay="800">
-              В максимальной степени, разрешенной действующим законодательством, Вива-Тур не несет ответственности за любой прямой, косвенный, случайный, специальный, последующий или штрафной ущерб, включая, но не ограничиваясь, упущенную выгоду, потерю данных, невозможность использования, ущерб деловой репутации или другие нематериальные убытки, возникшие в результате (i) вашего доступа к Сайту или его использования, или невозможности доступа или использования; (ii) любого поведения или контента третьих лиц на Сайте; (iii) любого контента, полученного с Сайта; и (iv) несанкционированного доступа, использования или изменения ваших передач или контента, независимо от того, основаны ли они на гарантии, контракте, деликте (включая халатность) или любой другой правовой теории, даже если мы были уведомлены о возможности такого ущерба.
+              By submitting content (e.g., enquiry forms, testimonials, documents), you grant PR International
+              Consultancy a non-exclusive, royalty-free licence to use, reproduce, modify, and communicate such content
+              for the purpose of delivering Services. You confirm you own or have rights to any content you submit and
+              that it does not infringe the rights of third parties.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="850">7. Ссылки на сторонние ресурсы</h2>
+            <h2 data-aos="fade-up" data-aos-delay="850">8. Third-Party Links</h2>
             <p data-aos="fade-up" data-aos-delay="900">
-              Сайт может содержать ссылки на веб-сайты или сервисы третьих лиц, которые не принадлежат и не контролируются Вива-Тур. Мы не несем ответственности за содержание, политику конфиденциальности или практику любых сторонних веб-сайтов или сервисов.
+              The website may contain links to third-party sites or services. These are provided for convenience; we do
+              not control or endorse third-party content and are not responsible for their policies or practices. Access
+              at your own risk.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="950">8. Изменения Условий</h2>
+            <h2 data-aos="fade-up" data-aos-delay="950">9. Disclaimer of Warranties</h2>
             <p data-aos="fade-up" data-aos-delay="1000">
-              Мы оставляем за собой право по собственному усмотрению изменять или заменять настоящие Условия в любое время. Если изменения являются существенными, мы постараемся предоставить уведомление не менее чем за [например, 30] дней до вступления в силу новых условий. Продолжая использовать наш Сайт после вступления в силу этих изменений, вы соглашаетесь с измененными условиями.
+              The Services are provided on an “as-is” basis without warranties of any kind, either express or implied,
+              including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, or
+              non-infringement. While we endeavour to keep information accurate and up to date, we make no guarantees
+              regarding the completeness, reliability, or availability of the Services.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="1050">9. Применимое право</h2>
+            <h2 data-aos="fade-up" data-aos-delay="1050">10. Limitation of Liability</h2>
             <p data-aos="fade-up" data-aos-delay="1100">
-              Настоящие Условия регулируются и толкуются в соответствии с законодательством Российской Федерации, без учета его коллизионных норм.
+              To the fullest extent permitted by law, PR International Consultancy shall not be liable for any indirect,
+              incidental, special, consequential, or punitive damages, or any loss of profits or data arising from your
+              use of the Services. Our total liability for any claim related to the Services shall not exceed the amount
+              you paid us for the specific service giving rise to the claim.
             </p>
 
-            <h2 data-aos="fade-up" data-aos-delay="1150">10. Контактная информация</h2>
+            <h2 data-aos="fade-up" data-aos-delay="1150">11. Indemnification</h2>
             <p data-aos="fade-up" data-aos-delay="1200">
-              Если у вас есть какие-либо вопросы по поводу настоящих Условий, пожалуйста, свяжитесь с нами:
+              You agree to indemnify and hold harmless PR International Consultancy, its directors, employees, agents,
+              and partners from any claims, liabilities, damages, losses, or expenses (including legal fees) arising
+              from your use of the Services, your violation of these Terms, or your infringement of any third-party
+              rights.
             </p>
-            <ul data-aos="fade-up" data-aos-delay="1250">
-              <li>Email: info@viva-education.com</li>
-              <li>Используя форму обратной связи на нашем <Link to="/about#contact-us" className="text-primary hover:underline">сайте</Link>.</li>
+
+            <h2 data-aos="fade-up" data-aos-delay="1250">12. Termination</h2>
+            <p data-aos="fade-up" data-aos-delay="1300">
+              We may suspend or terminate your access to the Services at any time, without prior notice, if we believe
+              you have violated these Terms or applicable law. Upon termination, your right to use the Services will
+              immediately cease.
+            </p>
+
+            <h2 data-aos="fade-up" data-aos-delay="1350">13. Governing Law &amp; Dispute Resolution</h2>
+            <p data-aos="fade-up" data-aos-delay="1400">
+              These Terms are governed by the laws of India, without regard to conflict-of-law principles. Any disputes
+              shall be settled amicably; failing that, they will be subject to the exclusive jurisdiction of the courts
+              located in Srinagar, Jammu &amp; Kashmir, India.
+            </p>
+
+            <h2 data-aos="fade-up" data-aos-delay="1450">14. Changes to These Terms</h2>
+            <p data-aos="fade-up" data-aos-delay="1500">
+              We may update these Terms periodically. The “Last updated” date indicates when revisions were made. We
+              encourage you to review the Terms regularly to stay informed about your rights and responsibilities.
+            </p>
+
+            <h2 data-aos="fade-up" data-aos-delay="1550">15. Contact Us</h2>
+            <p data-aos="fade-up" data-aos-delay="1600">
+              If you have questions about these Terms or wish to exercise any rights, please contact us at:
+            </p>
+            <ul data-aos="fade-up" data-aos-delay="1650">
+              <li>Email: <a href="mailto:pr.international70@gmail.com">pr.international70@gmail.com</a></li>
+              <li>Phone / WhatsApp: +86 151 1459 3047</li>
+              <li>WeChat: Aadi341</li>
+              <li>Head Office: Baghat Chowk, Near Sadar PS Baghat, Srinagar, India</li>
             </ul>
+
+            <p data-aos="fade-up" data-aos-delay="1700">
+              For additional information on how we handle personal data, please review our{' '}
+              <Link to="/privacypolicy" className="text-primary hover:text-primary/80">Privacy Policy</Link>.
+            </p>
           </div>
         </div>
       </div>

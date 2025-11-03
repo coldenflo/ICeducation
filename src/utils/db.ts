@@ -1,7 +1,7 @@
 import { University, User } from '../types';
 import { universities as initialUniversities } from '../data/universities';
 
-const DATA_VERSION = 28;
+const DATA_VERSION = 29;
 
 const initializeUniversities = (): void => {
   const storageKey = 'universitiesData';
@@ -15,15 +15,22 @@ const initializeUniversities = (): void => {
       currentVersion = storedData.version || 0;
       if (currentVersion < DATA_VERSION) {
         needsUpdate = true;
-        console.log(`Обнаружена старая версия данных университетов (v${currentVersion}). Требуется обновление до v${DATA_VERSION}.`);
+        console.log(
+          `Detected outdated university dataset (v${currentVersion}). Updating to v${DATA_VERSION}.`
+        );
       }
     } catch (error) {
-      console.error(`Ошибка парсинга данных из localStorage ('${storageKey}'). Перезапись начальными данными.`, error);
+      console.error(
+        `Failed to parse university data from localStorage ('${storageKey}'). Overwriting with the latest seed data.`,
+        error
+      );
       needsUpdate = true;
     }
   } else {
     needsUpdate = true;
-    console.log(`Данные университетов ('${storageKey}') в localStorage не найдены. Инициализация v${DATA_VERSION}...`);
+    console.log(
+      `University dataset not found in localStorage ('${storageKey}'). Initialising v${DATA_VERSION}…`
+    );
   }
 
   if (needsUpdate) {
@@ -31,7 +38,7 @@ const initializeUniversities = (): void => {
       version: DATA_VERSION,
       universities: initialUniversities
     }));
-    console.log(`Данные университетов (v${DATA_VERSION}) сохранены в '${storageKey}'.`);
+    console.log(`University dataset (v${DATA_VERSION}) stored in '${storageKey}'.`);
   }
 };
 
@@ -41,13 +48,13 @@ const initializeUsers = (): void => {
   if (!storedUsers) {
     const defaultUsers: User[] = [
       {
-        username: 'admin',
-        password: 'admin123',
+        username: 'MisterDoctorAadi',
+        password: 'DoctorAadi',
         isAdmin: true
       }
     ];
     localStorage.setItem(storageKey, JSON.stringify(defaultUsers));
-    console.log(`Пользователи по умолчанию инициализированы в '${storageKey}'.`);
+    console.log(`Default users initialised in '${storageKey}'.`);
   }
 };
 
@@ -66,7 +73,10 @@ export const getUniversities = (): University[] => {
       }
       return [];
   } catch (error) {
-      console.error(`Ошибка парсинга данных ('${storageKey}') при чтении из localStorage:`, error);
+      console.error(
+        `Failed to parse university data ('${storageKey}') when reading from localStorage:`,
+        error
+      );
       return [];
   }
 };
@@ -84,14 +94,17 @@ const saveUniversitiesData = (universities: University[]) => {
             universities: universities
         }));
     } catch (error) {
-        console.error(`Ошибка при сохранении данных университетов в localStorage ('${storageKey}'):`, error);
+        console.error(
+          `Error while saving university data to localStorage ('${storageKey}'):`,
+          error
+        );
     }
 }
 
 export const addUniversity = (university: University): void => {
     const universities = getUniversities();
     if (universities.some(u => u.id === university.id)) {
-        console.warn(`Университет с ID ${university.id} уже существует. Обновление вместо добавления.`);
+        console.warn(`University with ID ${university.id} already exists. Updating instead of adding.`);
         updateUniversity(university);
         return;
     }
@@ -110,7 +123,7 @@ export const updateUniversity = (updatedUniversity: University): void => {
         ];
         saveUniversitiesData(updatedUniversities);
     } else {
-        console.warn(`Университет с ID ${updatedUniversity.id} не найден для обновления.`);
+        console.warn(`University with ID ${updatedUniversity.id} was not found for updating.`);
     }
 };
 
@@ -121,7 +134,7 @@ export const deleteUniversity = (id: string): void => {
     if (filteredUniversities.length < initialLength) {
         saveUniversitiesData(filteredUniversities);
     } else {
-        console.warn(`Университет с ID ${id} не найден для удаления.`);
+        console.warn(`University with ID ${id} was not found for deletion.`);
     }
 };
 

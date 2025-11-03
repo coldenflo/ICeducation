@@ -1,59 +1,59 @@
 // src/data/documents.ts
-import { Document } from '../types'; // Убедитесь, что путь к типам правильный
+import { Document } from '../types';
 
 export const documents: Document[] = [
   {
     id: "1",
-    title: "Копия паспорта", 
-    requiredFor: "Всех типов заявок",  
-    description: "Четкая копия главной страницы вашего заграничного паспорта."  
+    title: "Passport Copy",
+    requiredFor: "All application types",
+    description: "A clear, full-colour copy of the information page of your valid passport.",
   },
   {
     id: "2",
-    title: "Аттестат/Диплом о среднем образовании",  
-    requiredFor: "Всех типов заявок",
-    description: "Документ о полном среднем образовании (или эквивалент)."  
+    title: "High School Diploma / Certificate",
+    requiredFor: "All application types",
+    description: "Proof of completed secondary education or equivalent qualification.",
   },
   {
     id: "3",
-    title: "Табель успеваемости (транскрипт)",  
-    requiredFor: "Всех типов заявок",
-    description: "Официальный табель (выписка) с вашими оценками."  
+    title: "Academic Transcript",
+    requiredFor: "All application types",
+    description: "Official transcript or mark sheet showing grades achieved in high school or college.",
   },
   {
     id: "4",
-    title: "Сертификат о знании языка",  
-    requiredFor: "Всех типов заявок",
-    description: "IELTS, TOEFL или другие сертификаты, подтверждающие уровень владения языком обучения."  
+    title: "Language Proficiency Certificate",
+    requiredFor: "All application types",
+    description: "IELTS, TOEFL, HSK, or other certificates proving proficiency in the language of instruction.",
   },
   {
     id: "5",
-    title: "Медицинская справка",  
-    requiredFor: "Всех типов заявок",
-    description: "Отчет о медицинском обследовании, действительный в течение 6 месяцев до даты подачи заявки."  
+    title: "Medical Examination Report",
+    requiredFor: "All application types",
+    description: "Health check report completed within six months of the application submission date.",
   },
   {
     id: "6",
-    title: "Справка о несудимости",  
-    requiredFor: "Всех типов заявок",
-    description: "Справка об отсутствии судимости, действительная в течение 6 месяцев до даты подачи заявки."  
+    title: "Police Clearance Certificate",
+    requiredFor: "All application types",
+    description: "A certificate confirming no criminal record, issued within six months of application.",
   },
   {
     id: "7",
-    title: "Фотографии 3х4 см (белый фон)",
-    requiredFor: "Всех типов заявок",
-    description: "Недавние фотографии паспортного размера на белом фоне."  
+    title: "Passport-Style Photos",
+    requiredFor: "All application types",
+    description: "Recent 3x4 cm passport photos on a white background.",
   },
   {
     id: "8",
-    title: "Рекомендательные письма",  
-    requiredFor: "Программ бакалавриата (и выше)",  
-    description: "Два рекомендательных письма от преподавателей или работодателей, на английском или китайском языке."  
+    title: "Letters of Recommendation",
+    requiredFor: "Undergraduate programmes (and above)",
+    description: "Two reference letters from teachers or employers written in English or Chinese.",
   },
   {
     id: "9",
-    title: "Мотивационное письмо / Учебный план",  
-    requiredFor: "Программ бакалавриата (и выше)",  
-    description: "Эссе объемом 500-800 слов, объясняющее вашу мотивацию и планы на обучение."  
-  }
+    title: "Motivation Letter / Study Plan",
+    requiredFor: "Undergraduate programmes (and above)",
+    description: "A 500–800 word statement describing your motivation, study goals, and future plans.",
+  },
 ];

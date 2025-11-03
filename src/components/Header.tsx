@@ -1,60 +1,53 @@
 // src/components/Header.tsx
-import React, { useState, useEffect, useRef } from 'react'; // Добавлен useRef
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { isAuthenticated, user } = useAuth();
+  const showAdminLink = Boolean(isAuthenticated && user?.isAdmin);
 
-  // --- Логика для скрытия/показа хедера при скролле ---
-  const [isVisible, setIsVisible] = useState(true); // Изначально хедер виден
-  const lastScrollY = useRef(0); // Используем useRef для хранения последнего значения скролла без ререндеров
-  const headerHeightThreshold = 80; // Порог в пикселях, после которого хедер может начать скрываться
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const headerHeightThreshold = 80;
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Всегда показывать хедер, если мы близко к верху страницы
       if (currentScrollY < headerHeightThreshold) {
         setIsVisible(true);
-        lastScrollY.current = currentScrollY; // Обновляем последнее значение
+        lastScrollY.current = currentScrollY;
         return;
       }
 
-      // Показываем хедер при скролле вверх
       if (currentScrollY < lastScrollY.current) {
         setIsVisible(true);
       }
-      // Скрываем хедер при скролле вниз (и если мы не в самом верху)
       else if (currentScrollY > lastScrollY.current && currentScrollY > headerHeightThreshold) {
-        // Не скрывать, если мобильное меню открыто!
         if (!isMenuOpen) {
             setIsVisible(false);
         }
       }
 
-      // Обновляем последнее значение скролла для следующего сравнения
-      // Устанавливаем > 0, чтобы избежать срабатывания на скролл до 0
       lastScrollY.current = currentScrollY <= 0 ? 0 : currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true }); // Используем passive для производительности
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => window.removeEventListener('scroll', handleScroll);
 
-  }, [isMenuOpen]); // Добавляем isMenuOpen в зависимости, чтобы хедер не скрывался при открытом меню
+  }, [isMenuOpen]);
 
-  // Закрываем меню при изменении маршрута
   useEffect(() => {
     closeMenu();
   }, [location.pathname]);
 
-  // --- Функции для мобильного меню ---
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Если открываем меню, хедер должен быть виден
     if (!isMenuOpen) {
         setIsVisible(true);
     }
@@ -63,36 +56,39 @@ const Header: React.FC = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-  // --- Конец логики ---
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out bg-white shadow-md py-3 ${
-        isVisible ? 'translate-y-0' : '-translate-y-full' // Управляем видимостью через transform
+        isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Логотип */}
-        <Link to="/" onClick={() => { closeMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-2">
+        <Link
+          to="/"
+          onClick={() => {
+            closeMenu();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="flex items-center gap-2"
+        >
           <img
-            src="https://i.postimg.cc/7ZsRc2bs/logo-descriptor-EN.png"
-            alt="Viva Tour Logo"
-            className="h-10 w-auto"
+            src="https://i.postimg.cc/k4BtQBkt/IMG-0532.png"
+            alt="PR International Consultancy logo"
+            className="h-14 w-auto drop-shadow-sm"
           />
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          {/* Ссылки */}
           <Link
             to="/universities"
             className={`font-medium transition-colors duration-200 ${
               location.pathname.startsWith('/universities')
-                ? 'text-primary border-b-2 border-primary pb-1' // Добавлен pb-1 для визуального выравнивания
-                : 'text-gray-700 hover:text-primary border-b-2 border-transparent' // Прозрачная граница для сохранения места
+                ? 'text-primary border-b-2 border-primary pb-1'
+                : 'text-gray-700 hover:text-primary border-b-2 border-transparent'
             }`}
           >
-            Университеты
+            Universities
           </Link>
           <Link
             to="/documents"
@@ -102,7 +98,7 @@ const Header: React.FC = () => {
                 : 'text-gray-700 hover:text-primary border-b-2 border-transparent'
             }`}
           >
-            Документы
+            Application Guide
           </Link>
           <Link
             to="/services"
@@ -112,7 +108,7 @@ const Header: React.FC = () => {
                 : 'text-gray-700 hover:text-primary border-b-2 border-transparent'
             }`}
           >
-            Наши услуги
+            Services
           </Link>
           <Link
             to="/about"
@@ -122,39 +118,47 @@ const Header: React.FC = () => {
                 : 'text-gray-700 hover:text-primary border-b-2 border-transparent'
             }`}
           >
-            О нас
+            About Us
           </Link>
         </nav>
+        {showAdminLink && (
+          <Link
+            to="/admin"
+            className={`hidden md:inline-flex font-medium transition-colors duration-200 ${
+              location.pathname === '/admin'
+                ? 'text-primary border-b-2 border-primary pb-1'
+                : 'text-gray-700 hover:text-primary border-b-2 border-transparent'
+            }`}
+          >
+            Admin
+          </Link>
+        )}
 
-        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 hover:text-primary transition-colors z-10" // Добавили z-10
+          className="md:hidden text-gray-700 hover:text-primary transition-colors z-10"
           onClick={toggleMenu}
-          aria-label={isMenuOpen ? "Закрыть меню" : "Открыть меню"}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {/* Анимация остается прежней, но теперь она зависит от isMenuOpen */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 ease-in-out overflow-y-auto ${ // Добавлен overflow-y-auto
-          isMenuOpen ? 'max-h-screen opacity-100 border-t border-gray-200' : 'max-h-0 opacity-0 border-t-0' // Используем max-h-screen и границу
+        className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 ease-in-out overflow-y-auto ${
+          isMenuOpen ? 'max-h-screen opacity-100 border-t border-gray-200' : 'max-h-0 opacity-0 border-t-0'
         }`}
-        style={{ maxHeight: isMenuOpen ? 'calc(100vh - 64px)' : '0' }} // Ограничиваем высоту видимой областью экрана
+        style={{ maxHeight: isMenuOpen ? 'calc(100vh - 64px)' : '0' }}
       >
-       {/* Контент меню рендерится всегда для правильной анимации высоты, но виден только при isMenuOpen */}
-          <nav className="flex flex-col space-y-1 p-4"> {/* Уменьшен space-y, добавлены отступы */}
+          <nav className="flex flex-col space-y-1 p-4">
             <Link
               to="/universities"
-              className={`block font-medium py-3 px-4 rounded transition-colors ${ // Увеличен py
+              className={`block font-medium py-3 px-4 rounded transition-colors ${
                 location.pathname.startsWith('/universities') ? 'text-primary bg-blue-50' : 'text-gray-700 hover:text-primary hover:bg-gray-100'
               }`}
               onClick={closeMenu}
             >
-              Университеты
+              Universities
             </Link>
             <Link
               to="/documents"
@@ -163,7 +167,7 @@ const Header: React.FC = () => {
               }`}
               onClick={closeMenu}
             >
-              Документы
+              Application Guide
             </Link>
             <Link
               to="/services"
@@ -172,7 +176,7 @@ const Header: React.FC = () => {
               }`}
               onClick={closeMenu}
             >
-              Наши услуги
+              Services
             </Link>
             <Link
               to="/about"
@@ -181,8 +185,19 @@ const Header: React.FC = () => {
               }`}
               onClick={closeMenu}
             >
-              О нас
+              About Us
             </Link>
+            {showAdminLink && (
+              <Link
+                to="/admin"
+                className={`block font-medium py-3 px-4 rounded transition-colors ${
+                  location.pathname === '/admin' ? 'text-primary bg-blue-50' : 'text-gray-700 hover:text-primary hover:bg-gray-100'
+                }`}
+                onClick={closeMenu}
+              >
+                Admin
+              </Link>
+            )}
           </nav>
 
       </div>
