@@ -1,0 +1,28 @@
+// frontend/tsconfig.app.json
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true, // Добавим на всякий случай, полезно
+    "isolatedModules": true,
+    "moduleDetection": "force", // Вместо noEmit, если module не commonjs/amd/system/umd
+    "noEmit": true,            // Если используете Vite, noEmit - нормально
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  // Указываем только папку с исходным кодом TypeScript/JavaScript фронтенда
+  "include": ["src"] 
+  // Убедитесь, что базовый tsconfig.json (если он есть) не включает лишнего
+}

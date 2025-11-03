@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/notify.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "package.json", 
+            "use": "@vercel/static-build",
+            "config": {
+                "buildCommand": "npm install && npm run build", 
+                "outputDirectory": "dist" 
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)", 
+            "dest": "/api/notify.py"
+        },
+        {
+            "handle": "filesystem" 
+        },
+        {
+            "src": "/(.*)", 
+            "dest": "/index.html" 
+        }
+    ]
+}
