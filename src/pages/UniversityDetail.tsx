@@ -103,7 +103,7 @@ const UniversityDetail: React.FC = () => {
     return (
       <div className="min-h-screen pt-24 pb-16 flex justify-center items-center">
         <Helmet>
-          <title>Loading… | PR International Consultancy</title>
+          <title>Loading… | PR China Admissions</title>
         </Helmet>
         <Loader2 className="animate-spin h-12 w-12 text-primary" />
         <span className="ml-3 text-gray-600">Loading university data…</span>
@@ -115,7 +115,7 @@ const UniversityDetail: React.FC = () => {
     return (
       <div className="min-h-screen pt-24 pb-16 flex justify-center items-center text-center px-4">
         <Helmet>
-          <title>Unable to Load | PR International Consultancy</title>
+          <title>Unable to Load | PR China Admissions</title>
         </Helmet>
         <p className="text-red-600">{error}</p>
       </div>
@@ -126,7 +126,7 @@ const UniversityDetail: React.FC = () => {
     return (
       <div className="min-h-screen pt-24 pb-16 flex justify-center items-center">
         <Helmet>
-          <title>Searching… | PR International Consultancy</title>
+          <title>Searching… | PR China Admissions</title>
         </Helmet>
         <Loader2 className="animate-spin h-12 w-12 text-primary" />
       </div>
@@ -140,7 +140,7 @@ const UniversityDetail: React.FC = () => {
         data-aos="fade-in"
       >
         <Helmet>
-          <title>University Not Found | PR International Consultancy</title>
+          <title>University Not Found | PR China Admissions</title>
           <meta name="description" content="The requested university could not be found." />
         </Helmet>
         <h2 className="text-2xl font-bold text-gray-800 mb-4">University not found</h2>
@@ -161,7 +161,7 @@ const UniversityDetail: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{university.name} | PR International Consultancy</title>
+        <title>{university.name} | PR China Admissions</title>
         <meta
           name="description"
           content={`Explore study options at ${university.name}: programs, scholarships, requirements, and estimated costs in ${university.location}.`}

@@ -14,10 +14,10 @@ const Documents: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Required Documents | PR International Consultancy</title>
+        <title>Required Documents | PR China Admissions</title>
         <meta
           name="description"
-          content="Review the essential documents you need to study in China with PR International Consultancy — from passports and transcripts to medical checks and recommendation letters."
+          content="Review the essential documents you need to study in China with PR China Admissions — from passports and transcripts to medical checks and recommendation letters."
         />
       </Helmet>
       <div className="min-h-screen pt-24 pb-16 bg-gray-50 overflow-hidden">
@@ -27,7 +27,7 @@ const Documents: React.FC = () => {
               Required Documents for Studying in China
             </h1>
             <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-              Use this checklist to prepare your application package. PR International Consultancy will
+              Use this checklist to prepare your application package. PR China Admissions will
               review each document, suggest improvements, and ensure it meets the requirements of your
               chosen universities.
             </p>
@@ -44,7 +44,7 @@ const Documents: React.FC = () => {
               additional materials are necessary for undergraduate and higher-level degree programmes.
             </p>
             <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-              PR International Consultancy assists with notarised translations, verification, and
+              PR China Admissions assists with notarised translations, verification, and
               application portal uploads. Always check the validity period of documents such as medical
               reports and police clearances — they typically must be issued within six months of
               submission.

@@ -6,10 +6,10 @@ const TermsOfService: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | PR International Consultancy</title>
+        <title>Terms of Service | PR China Admissions</title>
         <meta
           name="description"
-          content="Read the terms that govern your use of PR International Consultancy’s website, services, and resources for studying in China."
+          content="Read the terms that govern your use of PR China Admissions’s website, services, and resources for studying in China."
         />
       </Helmet>
       <div className="min-h-screen pt-24 pb-16 bg-gray-50 overflow-hidden">
@@ -21,7 +21,7 @@ const TermsOfService: React.FC = () => {
 
             <h2 data-aos="fade-up" data-aos-delay="50">1. Introduction</h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              Welcome to PR International Consultancy Pvt Ltd (“PR International Consultancy”, “we”, “us” or “our”).
+              Welcome to PR China Admissions Pvt Ltd (“PR China Admissions”, “we”, “us” or “our”).
               These Terms of Service (“Terms”) govern your access to and use of our website, any subdomains, and the
               services, tools, and content provided through it (collectively, the “Services”). By using our Services,
               you agree to these Terms. If you do not agree, please refrain from accessing the website.
@@ -29,7 +29,7 @@ const TermsOfService: React.FC = () => {
 
             <h2 data-aos="fade-up" data-aos-delay="150">2. Services We Provide</h2>
             <p data-aos="fade-up" data-aos-delay="200">
-              PR International Consultancy provides advisory and application support services for students seeking to
+              PR China Admissions provides advisory and application support services for students seeking to
               study at universities in China. Services include, but are not limited to, academic counselling, programme
               selection, scholarship guidance, document preparation, visa assistance, pre-departure briefings, and
               related logistical support. A detailed overview is available on the{' '}
@@ -68,7 +68,7 @@ const TermsOfService: React.FC = () => {
             <h2 data-aos="fade-up" data-aos-delay="650">6. Intellectual Property</h2>
             <p data-aos="fade-up" data-aos-delay="700">
               The website, including text, graphics, logos, icons, images, audio clips, downloads, and software, is the
-              property of PR International Consultancy or its licensors and is protected by international copyright,
+              property of PR China Admissions or its licensors and is protected by international copyright,
               trademark, and other intellectual property laws. You may view the content for personal, non-commercial use
               only. Any reproduction, distribution, or derivative work requires prior written consent.
             </p>
@@ -98,7 +98,7 @@ const TermsOfService: React.FC = () => {
 
             <h2 data-aos="fade-up" data-aos-delay="1050">10. Limitation of Liability</h2>
             <p data-aos="fade-up" data-aos-delay="1100">
-              To the fullest extent permitted by law, PR International Consultancy shall not be liable for any indirect,
+              To the fullest extent permitted by law, PR China Admissions shall not be liable for any indirect,
               incidental, special, consequential, or punitive damages, or any loss of profits or data arising from your
               use of the Services. Our total liability for any claim related to the Services shall not exceed the amount
               you paid us for the specific service giving rise to the claim.
@@ -106,7 +106,7 @@ const TermsOfService: React.FC = () => {
 
             <h2 data-aos="fade-up" data-aos-delay="1150">11. Indemnification</h2>
             <p data-aos="fade-up" data-aos-delay="1200">
-              You agree to indemnify and hold harmless PR International Consultancy, its directors, employees, agents,
+              You agree to indemnify and hold harmless PR China Admissions, its directors, employees, agents,
               and partners from any claims, liabilities, damages, losses, or expenses (including legal fees) arising
               from your use of the Services, your violation of these Terms, or your infringement of any third-party
               rights.

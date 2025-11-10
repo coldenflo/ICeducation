@@ -20,10 +20,10 @@ const Universities: React.FC = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 bg-gray-50 ">
       <Helmet>
-        <title>Chinese Universities | PR International Consultancy Partners</title>
+        <title>Chinese Universities | PR China Admissions Partners</title>
         <meta
           name="description"
-          content="Browse Chinese universities available through PR International Consultancy. Discover programs, locations, and scholarship-friendly institutions."
+          content="Browse Chinese universities available through PR China Admissions. Discover programs, locations, and scholarship-friendly institutions."
         />
       </Helmet>
       <div className="container mx-auto px-4">

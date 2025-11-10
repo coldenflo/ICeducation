@@ -12,10 +12,10 @@ const Services: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Services | PR International Consultancy</title>
+        <title>Services | PR China Admissions</title>
         <meta
           name="description"
-          content="Discover the full suite of services from PR International Consultancy — admissions counselling, scholarships, visa processing, pre-departure preparation, and multilingual student support for China."
+          content="Discover the full suite of services from PR China Admissions — admissions counselling, scholarships, visa processing, pre-departure preparation, and multilingual student support for China."
         />
       </Helmet>
       <div className="min-h-screen pt-24 pb-16 bg-gray-50 overflow-hidden">
@@ -40,7 +40,7 @@ const Services: React.FC = () => {
 
           <div className="bg-white rounded-lg shadow-lg p-8 md:p-12 mb-16" data-aos="fade-up">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-              Why Partner with PR International Consultancy?
+              Why Partner with PR China Admissions?
             </h2>
             <div
               className={`relative overflow-hidden transition-all duration-700 ease-in-out ${
@@ -119,7 +119,7 @@ const Services: React.FC = () => {
                   name: 'Sara I.',
                   subtitle: 'MBBS Student, Harbin Medical University',
                   quote:
-                    'PR International Consultancy made my MBBS admission seamless. They prepared my documents, secured my scholarship, and even arranged airport pickup. I felt supported from day one.',
+                    'PR China Admissions made my MBBS admission seamless. They prepared my documents, secured my scholarship, and even arranged airport pickup. I felt supported from day one.',
                 },
                 {
                   initials: 'MA',
@@ -133,7 +133,7 @@ const Services: React.FC = () => {
                   name: 'Nargiza B.',
                   subtitle: 'Business Administration, Shanghai University',
                   quote:
-                    'From spot admission in Tashkent to finding housing in Shanghai, PR International Consultancy was with me the entire way. Their guidance made studying abroad achievable.',
+                    'From spot admission in Tashkent to finding housing in Shanghai, PR China Admissions was with me the entire way. Their guidance made studying abroad achievable.',
                 },
               ].map((testimonial, index) => (
                 <div

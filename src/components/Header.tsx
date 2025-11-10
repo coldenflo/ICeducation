@@ -74,7 +74,7 @@ const Header: React.FC = () => {
         >
           <img
             src="https://i.postimg.cc/k4BtQBkt/IMG-0532.png"
-            alt="PR International Consultancy logo"
+            alt="PR China Admissions logo"
             className="h-14 w-auto drop-shadow-sm"
           />
         </Link>

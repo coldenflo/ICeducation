@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <GraduationCap className="w-8 h-8 text-secondary" />
-              <span className="text-xl font-bold">PR International Consultancy</span>
+              <span className="text-xl font-bold">PR China Admissions</span>
             </div>
             <p className="text-gray-300 mb-4">
               A trusted global education consultancy guiding students to leading Chinese universities with end-to-end admission, scholarship, and relocation support.
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
-          <p className="text-gray-400">© {new Date().getFullYear()} PR International Consultancy Pvt Ltd. All rights reserved.</p>
+          <p className="text-gray-400">© {new Date().getFullYear()} PR China Admissions Pvt Ltd. All rights reserved.</p>
           <div className="space-x-4">
             <Link to="/privacypolicy" className="hover:text-secondary transition-colors">Privacy Policy</Link>
             <span>|</span>

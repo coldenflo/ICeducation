@@ -31,42 +31,42 @@ const About: React.FC = () => {
   const licenseGallery = [
     {
       src: 'https://i.postimg.cc/QdgfKy3W/2025-10-19-18-21-42.png',
-      alt: 'PR International Consultancy license 1',
+      alt: 'PR China Admissions license 1',
       caption: 'KYC Acknowledgement letter from CDSL VENTURES LIMITED ',
     },
     {
       src: 'https://i.postimg.cc/MGdtdfHF/2025-10-19-18-21-37.png',
-      alt: 'PR International Consultancy license 2',
+      alt: 'PR China Admissions license 2',
       caption: 'Certificate of Incorporation from Government of India Ministry of Corporate Affairs',
     },
     {
       src: 'https://i.postimg.cc/5tVLL43N/2025-10-19-18-36-21.png',
-      alt: 'PR International Consultancy collaboration 1',
+      alt: 'PR China Admissions collaboration 1',
       caption: 'Academic Collaboration – Chinese Partner University',
     },
     {
       src: 'https://i.postimg.cc/1zr6KkCq/2025-10-19-18-36-16.png',
-      alt: 'PR International Consultancy collaboration 2',
+      alt: 'PR China Admissions collaboration 2',
       caption: 'Academic Collaboration – Chinese Partner University',
     },
     {
       src: 'https://i.postimg.cc/0Q5SXVFT/2025-10-19-18-36-11.png',
-      alt: 'PR International Consultancy collaboration 2',
+      alt: 'PR China Admissions collaboration 2',
       caption: 'Academic Collaboration – Chinese Partner University',
     },
     {
       src: 'https://i.postimg.cc/G2MyWk1t/2025-10-19-18-36-02.png',
-      alt: 'PR International Consultancy collaboration 2',
+      alt: 'PR China Admissions collaboration 2',
       caption: 'Academic Collaboration – Chinese Partner University',
     },
     {
       src: 'https://i.postimg.cc/L5n12nHJ/2025-10-19-18-35-57.png',
-      alt: 'PR International Consultancy collaboration 2',
+      alt: 'PR China Admissions collaboration 2',
       caption: 'Academic Collaboration – Chinese Partner University',
     },
     {
       src: 'https://i.postimg.cc/Kjwgzxz5/2025-10-19-18-35-53.png',
-      alt: 'PR International Consultancy collaboration 2',
+      alt: 'PR China Admissions collaboration 2',
       caption: 'Academic Collaboration – Chinese Partner University',
     },
   ];
@@ -129,10 +129,10 @@ const About: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About PR International Consultancy | Study in China</title>
+        <title>About PR China Admissions | Study in China</title>
         <meta
           name="description"
-          content="Discover PR International Consultancy Pvt Ltd — a trusted global education consultancy guiding students to top Chinese universities with multilingual support and end-to-end services."
+          content="Discover PR China Admissions Pvt Ltd — a trusted global education consultancy guiding students to top Chinese universities with multilingual support and end-to-end services."
         />
       </Helmet>
 
@@ -144,7 +144,7 @@ const About: React.FC = () => {
           >
             <div className="p-8 md:p-12 text-white">
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                PR International Consultancy Pvt Ltd.
+                PR China Admissions Pvt Ltd.
               </h1>
               <p className="text-xl text-blue-100 mb-6">
                 A perfect choice for your study journey with a trusted global partner in China admissions.
@@ -216,7 +216,7 @@ const About: React.FC = () => {
                 {isAboutUsExpanded && (
                   <>
                     <p>
-                      PR International Consultancy is the trusted route to explore new learning
+                      PR China Admissions is the trusted route to explore new learning
                       opportunities in China. Our goal is to simplify every step, from selecting the
                       right major to settling into campus life, so students and families can focus on
                       academic success and personal growth.
@@ -258,7 +258,7 @@ const About: React.FC = () => {
                       closer to students through hands-on events and personalised assessments.
                     </p>
                     <p>
-                      PR International Consultancy holds official registrations in Bangladesh and Russia,
+                      PR China Admissions holds official registrations in Bangladesh and Russia,
                       and continues to earn additional authorisations from institutional partners. Our
                       operations are supported by a global network of representatives across Bangladesh,
                       Iran, India, Russia, Pakistan, Nepal, Africa, Afghanistan, and Uzbekistan.
@@ -286,7 +286,7 @@ const About: React.FC = () => {
             <div data-aos="fade-left" data-aos-delay="100">
               <img
                 src="https://i.postimg.cc/k5x7k9Kj/2025-10-19-17-55-22.png"
-                alt="PR International Consultancy global team"
+                alt="PR China Admissions global team"
                 className="rounded-lg shadow-md w-100 ml-24 h-auto object-cover"
               />
             </div>
@@ -393,7 +393,7 @@ const About: React.FC = () => {
           <div className="bg-blue-900 text-white rounded-lg shadow-xl p-8 md:p-12 mb-16" data-aos="zoom-in">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Company Goal</h2>
             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-              PR International Consultancy is the trusted route for exploring new learning opportunities
+              PR China Admissions is the trusted route for exploring new learning opportunities
               in China. We make quality education accessible by providing honest guidance, comprehensive
               scholarship support, and streamlined admission services. Our commitment is to empower every
               student to build a successful global career through education.
@@ -630,7 +630,7 @@ const About: React.FC = () => {
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact PR International Consultancy</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact PR China Admissions </h2>
               <div className="space-y-5 mb-8">
                 <div className="flex items-start">
                   <MapPin className="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />

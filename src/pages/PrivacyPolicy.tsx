@@ -6,10 +6,10 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | PR International Consultancy</title>
+        <title>Privacy Policy | PR China Admissions</title>
         <meta
           name="description"
-          content="Learn how PR International Consultancy collects, uses, and protects personal information for students pursuing education opportunities in China."
+          content="Learn how PR China Admissions collects, uses, and protects personal information for students pursuing education opportunities in China."
         />
       </Helmet>
       <div className="min-h-screen pt-24 pb-16 bg-gray-50 overflow-hidden">
@@ -21,7 +21,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <h2 data-aos="fade-up" data-aos-delay="50">1. Overview</h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              PR International Consultancy Pvt Ltd (“PR International Consultancy”, “we”, “us”, or “our”) is committed to
+              PR China Admissions Pvt Ltd (“PR China Admissions”, “we”, “us”, or “our”) is committed to
               protecting the privacy of students, parents, partners, and visitors who interact with our website and
               services. This Privacy Policy describes how we collect, use, disclose, and safeguard your personal
               information when you visit{' '}
@@ -113,7 +113,7 @@ const PrivacyPolicy: React.FC = () => {
                 protect our rights and safety.
               </li>
               <li>
-                <strong>Business transfers:</strong> If PR International Consultancy undergoes a merger, acquisition, or
+                <strong>Business transfers:</strong> If PR China Admissions undergoes a merger, acquisition, or
                 asset sale, personal data may be transferred subject to the same privacy commitments.
               </li>
             </ul>
@@ -165,7 +165,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <h2 data-aos="fade-up" data-aos-delay="1350">11. Third-Party Services &amp; Links</h2>
             <p data-aos="fade-up" data-aos-delay="1400">
-              The Site may include links to external websites. PR International Consultancy is not responsible for the
+              The Site may include links to external websites. PR China Admissions is not responsible for the
               privacy practices or content of third-party sites. Review their policies before providing personal
               information.
             </p>

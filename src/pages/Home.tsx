@@ -12,10 +12,10 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Study in China with PR International Consultancy</title>
+        <title>Study in China with PR China Admissions</title>
         <meta
           name="description"
-          content="PR International Consultancy Pvt Ltd guides international students into top Chinese universities with admission counselling, scholarships, and multilingual support."
+          content="PR China Admissions Pvt Ltd guides international students into top Chinese universities with admission counselling, scholarships, and multilingual support."
         />
       </Helmet>
 
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                 Your Gateway to Chinese Universities
               </h1>
               <p className="text-xl text-white/90 mb-8">
-                PR International Consultancy connects you with leading universities across China and
+                PR China Admissions connects you with leading universities across China and
                 supports every step — from counselling and scholarships to visas and arrival.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">
-            Why Students Choose PR International Consultancy
+            Why Students Choose PR China Admissions
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div
@@ -153,7 +153,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact PR International Consultancy today to discuss programmes, scholarship timelines,
+            Contact PR China Admissions today to discuss programmes, scholarship timelines,
             and the best route into your dream university in China.
           </p>
           <Link
